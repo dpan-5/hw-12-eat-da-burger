@@ -27,7 +27,6 @@ $(function() {
 
     var newCat = {
       name: $("#ca").val().trim(),
-      eaten: $("[name=sleepy]:checked").val().trim()
     };
 
     // Send the POST request.

@@ -1,6 +1,15 @@
-<h1>Cats!</h1>
+<div class="wrapper">
+<h1>Eat da Burger</h1>
+<form class="create-form">
 
-<h2>Cats that are not sleepy!</h2>
+  <div class="form-group">
+    <input type="text" id="ca" name="name">
+  </div>
+  <button type="submit" id="submit-btn">Add Burger</button>
+</form>
+
+<div class="burger-div">
+<h2>Burgers that are not eaten!</h2>
 
 <ul>
   {{#each cats}}
@@ -9,8 +18,10 @@
     {{/unless}}
   {{/each}}
 </ul>
+</div>
 
-<h2>Cats that are sleepy!</h2>
+<div class="burger-div">
+<h2>Burgers that have been eaten!</h2>
 
 <ul>
   {{#each cats}}
@@ -19,20 +30,5 @@
     {{/if}}
   {{/each}}
 </ul>
-
-<h2>Add a Cat</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="ca">Cat Name:</label>
-    <input type="text" id="ca" name="name">
-  </div>
-
-  <div class="form-group">
-    <label for="sleepy">Sleepy?</label><br>
-    <input type="radio" name="sleepy" value="1" checked> Sleepy!<br>
-    <input type="radio" name="sleepy" value="0"> Awake
-  </div>
-
-  <button type="submit">Add Cat</button>
-</form>
+</div>
+</div>

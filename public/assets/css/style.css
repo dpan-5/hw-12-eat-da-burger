@@ -1,11 +1,6 @@
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
-}
-
-.label {
-  font-weight: bold;
 }
 
 .create-update-form {
@@ -15,5 +10,31 @@ li {
 }
 
 .form-group {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+#submit-btn {
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid black;
+  background-color: #ebd076;
+  justify-content: center;
+}
+
+body {
+    display: flex;
+    flex-flow: row nowrap;  
+    justify-content: center;
+    align-content: center;
+    /* align-items: center; */
+    height:100%;
+    /* background:#f1c123; */
+    background-image: url("./../burgerbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#ca {
+  height: 80px;
+  width: 500px;
 }
